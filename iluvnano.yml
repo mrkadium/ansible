@@ -1,0 +1,14 @@
+---
+  - name: iluvnano #name of the play
+    hosts: linux #hosts afected by the play
+    tasks:
+    
+      - name: ensure nano is there #name of the task
+        apt: #this is the module
+          name: nano #program
+          state: latest #state of the program: no change if it's there, install if not
+
+      - name: ensure python3 is there
+        apt:
+          name: python3
+          state: latest

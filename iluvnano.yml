@@ -4,11 +4,11 @@
     tasks:
     
       - name: ensure nano is there #name of the task
-        apt: #this is the module
+        yum: #this is the module
           name: nano #program
           state: latest #state of the program: no change if it's there, install if not
 
       - name: ensure python3 is there
-        apt:
+        yum:
           name: python3
           state: latest

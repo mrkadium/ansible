@@ -4,6 +4,6 @@
     tasks:
     
       - name: ensure nano is there #name of the task
-        apt: #this is the module
+        yum: #this is the module
           name: nano #program
           state: absent #state of the program: no change if it's not there, uninstall if so
